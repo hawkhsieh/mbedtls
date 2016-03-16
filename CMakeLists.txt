@@ -14,6 +14,8 @@ else()
     option(ENABLE_TESTING "Build mbed TLS tests." ON)
 endif()
 
+set( CMAKE_C_COMPILER mips-linux-uclibc-gcc )
+
 set(CMAKE_BUILD_TYPE ${CMAKE_BUILD_TYPE}
     CACHE STRING "Choose the type of build: None Debug Release Coverage ASan ASanDbg MemSan MemSanDbg Check CheckFull"
     FORCE)
